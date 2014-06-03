@@ -1,1 +1,4 @@
-candy
+
+	float angle1 = ccpAngleSigned(ccpSub(ccp(visibleSize.width/2,visibleSize.height/2), pPoint), CCPointMake(0, 1));
+	armature1->setRotation( CC_RADIANS_TO_DEGREES(angle1) );
+	CCLog("HelloWorld::ccTouchesBegan [angle:%d] ccpDistance[%f]", (int)angle, ccpDistance(pPoint, ccp(visibleSize.width/2,visibleSize.height/2)));
